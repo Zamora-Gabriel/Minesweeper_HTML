@@ -1,14 +1,13 @@
 //Copyright (C) 2021 Gabriel Zamora
 'use strict';
 
-
 export default class Game {
     constructor() {
 
         this.board = {
             size: 0,
             //placeholder variable for time to be implemented
-            timecount: 0
+            timecount: 20
         };
         this.done = false;
         //Flag for size
@@ -43,6 +42,7 @@ export default class Game {
         while (!this.done) {
             this.resizeGrid();
             this.render();
+            this.update();
         }
         this.done = false;
     }
@@ -74,7 +74,6 @@ export default class Game {
 
             if (document.querySelector("#lvl-" + i).checked) {
                 // assign checked radio's value to the size variable inside board
-                alert(document.querySelector("#lvl-" + i).value);
                 this.board.size = document.querySelector("#lvl-" + i).value;
                 //Flags
                 this.sizerr = false;
@@ -111,6 +110,12 @@ export default class Game {
         markup += "</table>";
         //find the board div, attach to this table
         document.querySelector("#board").innerHTML = markup;
+    }
+
+
+    update() {
+        //Game timer (to be implemented)
+
     }
 
     hidesplash() {
