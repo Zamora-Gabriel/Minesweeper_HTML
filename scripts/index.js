@@ -10,15 +10,13 @@ let game = new Game();
 let splash = new Splash();
 let score = new Score();
 
-
-let bttnElement = document.querySelector("#play-btn");
-
+//Start with score page
 document.querySelector("#score-page").hidden = true;
 document.querySelector("#minesw-game").hidden = true;
 
 
 //Check buttons
 game.checkbttn();
-score.checkover();
+score.checkover(game.score);
 splash.retbttn();
 game.resbttn();

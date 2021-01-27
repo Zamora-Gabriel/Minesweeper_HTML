@@ -14,6 +14,9 @@ export default class Game {
         this.sizerr = true;
         //Flag for restart or new game
         this.newgame = true;
+
+        //score value
+        this.score = 0;
     }
 
     checkbttn() {
@@ -114,8 +117,7 @@ export default class Game {
 
 
     update() {
-        //Game timer (to be implemented)
-
+        //Game timer and disabling selected buttons (to be implemented)
     }
 
     hidesplash() {

@@ -3,6 +3,7 @@
 
 <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Minesweeper Game</title>
 </head>
 
 <body>
@@ -11,6 +12,11 @@
         <!-- Score page -->
         <section id="score-page">
             <div id="score-show">
+                <center>
+                    <h1>Score:
+                        <div id="result-numb"></div>
+                    </h1>
+                </center>
                 <!-- page that shows the score or game over -->
                 <button id="restart-btn">Restart Game</button>
                 <button id="return-btn">Return to splash</button>
@@ -49,6 +55,10 @@
         </section>
         <!--Splash page-->
         <section id="splash-page" class="fixing-pos">
+
+            <center>
+                <h1>MINESWEEPER</h1>
+            </center>
             <form id="select-size">
                 <!-- Limit user to 4 levels (grid sizes)-->
                 <div>Select grid size:</div>

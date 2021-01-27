@@ -26,6 +26,11 @@ body {
     /* Set up positioning as fixed in order to cover all page*/
 }
 
+#score-show>center>h1 {
+    color: lightgreen;
+    flex-shrink: 1;
+}
+
 #restart-btn {
     /*align to center the button*/
     margin-inline: 60vh;
@@ -101,6 +106,9 @@ body {
     flex-shrink: 1;
 }
 
+
+/*Splash Page styles*/
+
 #splash-page {
     font-size: 4.5vh;
     display: flex;
@@ -113,6 +121,11 @@ body {
     min-height: 100%;
     width: 100%;
     /* Set up positioning as fixed in order to cover all page*/
+}
+
+#splash-page>center>h1 {
+    font-size: 7vh;
+    color: lightgreen;
 }
 
 #play-btn {
@@ -131,8 +144,10 @@ body {
 }
 
 #select-size {
+    margin-inline: 50vh;
     margin-bottom: 5vh;
     padding: 0.5em;
+    border: 2px dotted yellow;
     flex-shrink: 1;
     color: lightgreen;
     text-align: center;
@@ -162,8 +177,8 @@ body {
 
 /*highlight selected button until another is selected*/
 
-.mine-cell:focus,
-.mine-cell32:focus {
+.mine-cell:active,
+.mine-cell32:active {
     background: radial-gradient(blue, transparent);
 }
 
